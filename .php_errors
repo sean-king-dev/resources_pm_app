@@ -1,0 +1,4 @@
+[26-Jun-2018 11:38:46 UTC] PHP Warning:  mysql_connect(): No such file or directory in /home/forge/resource-kingseducation-com.bisongrid.com/public/includes/kingsDB.inc.php on line 14
+[26-Jun-2018 11:38:47 UTC] PHP Warning:  mysql_connect(): No such file or directory in /home/forge/resource-kingseducation-com.bisongrid.com/public/includes/kingsDB.inc.php on line 14
+[26-Jun-2018 11:53:59 UTC] PHP Notice:  Undefined variable: ROWS in /home/forge/resource-kingseducation-com.bisongrid.com/public/file.php on line 31
+[02-Jul-2018 20:42:16 UTC] PHP Parse error:  syntax error, unexpected '$_GET' (T_VARIABLE) in /home/forge/resource-kingseducation-com.bisongrid.com/public/select-chain.php on line 436

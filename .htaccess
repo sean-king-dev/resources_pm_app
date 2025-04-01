@@ -1,0 +1,18 @@
+RewriteEngine on
+
+RewriteRule ^setdebug/([^/\.]+)/?$ /setdebug.php?s=$1 [L]
+RewriteRule ^setdebug/?$ /setdebug.php [L]
+
+
+RewriteRule ^admin/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /admin/admin.php?p=$1&s=$2&t=$3 [L]
+RewriteRule ^admin/([^/\.]+)/([^/\.]+)/?$ /admin/admin.php?p=$1&s=$2 [L]
+RewriteRule ^admin/([^/\.]+)/?$ /admin/admin.php?p=$1 [L]
+RewriteRule ^admin/?$ /admin/admin.php [L]
+
+
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /index.php?p=$1&s=$2&t=$3&q=$4&qi=$5&sn=$6 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /index.php?p=$1&s=$2&t=$3&q=$4&qi=$5 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /index.php?p=$1&s=$2&t=$3&q=$4 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/([^/\.]+)/?$ /index.php?p=$1&s=$2&t=$3 [L]
+RewriteRule ^([^/\.]+)/([^/\.]+)/?$ /index.php?p=$1&s=$2 [L]
+RewriteRule ^([^/\.]+)/?$ /index.php?p=$1 [L]

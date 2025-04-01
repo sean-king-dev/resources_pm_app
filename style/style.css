@@ -1,0 +1,826 @@
+/* ========================================
+    
+    File: preview.css
+    Site: preview.com
+    Author: Rob Dove (preview.co.uk)
+    Copyright: 2009 preview.co.uk
+ 
+   ======================================== */
+
+    @import url("reset.css");
+    
+/* Guidelines
+        font-sizes
+            12pt = 1em
+            14pt = 1.4em
+            16pt = 1.34em
+            18pt = 1.5em
+            47pt = 4em;
+            86pt = 7.2em
+            
+        colours
+            main = #666666
+            pink = #CC0066
+            blue = #009DDD
+            dark grey = #999999
+            light grey = #CCCCCC
+*/
+    
+
+/* ----------------------------------------
+    1. Body
+   ---------------------------------------- */
+
+    /* The font-size percentage is of 16px. (0.75 * 16px = 12px) */
+     
+    body {
+        background: #ffffff top center repeat fixed;
+        font-family:  Verdana, Arial, Helvetica, sans-serif;
+        font-size: 75%;
+        color:#101010;
+    }
+
+/* ----------------------------------------
+    2. Type
+   ---------------------------------------- */
+    
+    p, ul li, ol li, form, h3 {line-height:1.2em;}
+    
+    #content p{
+        margin-bottom: 10px;
+    }
+
+    h1 {     line-height: 1.3em; color: #56004E; font-size: 1.6em; font-weight: bold; margin-bottom: 25px;}
+    
+    #logo h1{
+            color: #56004E;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 0.1em;
+    margin-top: 33px;
+    }
+    
+    #up{
+        position: relative;
+        top: -8px;  
+    }
+    
+    #contact h1 {
+    color: #56004E;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 0.1em;
+    margin-top: 10px;
+    }
+    
+    h2, h2 a, h2 a:hover {     color: #555;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 20px 0 10px;}    
+    h3 { font-size:1.1em; font-weight:bold;}
+    h4 { font-size:1em;}
+    hr {    background-color: white;
+    border: medium none;
+    height: 1px;}
+    hr {       background-color: #DDDDDD;
+    border: medium none;
+    float: left;
+    height: 1px;
+    width: 97%;}
+    
+        
+    p { margin:0.5em 0; line-height: 1.5em;}
+    
+    a { color:#D76E07; }
+    a:hover, .current, div.right-main a:hover { color:#D76E07; }
+    
+    div.right-main a{
+        color: #333;
+    }
+    
+    
+    ul{
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none;
+    }
+    
+    li{
+    background-image: url("/images/orangeBullet.png");
+    background-position: 0 6px;
+    background-repeat: no-repeat;
+    padding-bottom: 3px;
+    padding-left: 20px;
+    padding-top: 3px;
+    }
+    
+
+
+/* ----------------------------------------
+    3. Classes
+   ---------------------------------------- */
+    .error{color:red;}
+    .clearall { clear:both;}
+    .floatright { float:right !important;}
+    .floatleft { float:left; }
+    .alignright { text-align:right;}
+    .invisible {position:absolute; left:-9999px; top:-9999px;}
+    .lowlight { color:#999999; margin-bottom:0;}
+    .extratop { padding-top:10px;}
+    .lrg_grey { font-size:2.6em; color:#CCCCCC;margin-bottom:0;}
+    .highlight{color:#D76E07;font-weight:bold;}
+    .block-inner{    background: none repeat scroll 0 0 #EEEEEE; float: left;margin-top: 0; padding: 10px 12px 4px; margin-bottom: 20px;
+    }
+    .fullPics{display:none;}
+    .leftcorner{   background: url("/images/greyLeftBlock.jpg") repeat scroll 0 0 transparent;
+    height: 29px;
+    width: 4px;
+    float: left;}
+    .rightcorner{  background: url("/images/greyRightBlock.jpg") repeat scroll 0 0 transparent;
+    height: 29px;
+    width: 4px;
+    float: left;}
+    
+    .blockTitle{  background: url("/images/greyBlockbck.jpg") repeat scroll 0 0 transparent;
+    color: white;
+    float: left;
+    font-weight: bold;
+    height: 9px;
+    padding: 10px;
+    width: 635px;}
+    .link{cursor:pointer};
+    .left  {width: 635px;}
+    .label {color:#D76E07;}
+    .carousel{padding:0px; width: 663px;}
+    .prev{    background: url("/images/leftGrey.jpg") no-repeat #CCCDD0; float: left; height: 200px; width: 22px; background-position:center; }
+    .next{    background: url("/images/rightGrey.jpg") no-repeat #CCCDD0; float: right; height: 200px; width: 22px; background-position:center; }
+    .next:hover,.prev:hover{
+        background:#ddd;
+    }
+    .images{float:left;}
+    .stockItem{  float: left;}
+    .stockbox{  float: left; width:150px; height:190px; padding: 2px;  text-align: center;}
+    .right{    width:213px;}
+    .right-main{    width:217px;}
+    .block-left{margin-top:30px;}
+
+    .block-left-stock{width: 500px;}
+        .up{
+      height: 25px;
+    margin-top: -18px;
+    padding-top: 5px;
+    width: 217px;}
+    .powered{ display: none;}
+    .price{float:right;}
+    .left-stock{width: 461px;}
+    .left-stock-main{width: 465px;}
+    .block-left-stock{    float: right; width: 490px;}
+    .stock-image{    float: left; margin-right: 10px;}
+    .green{    background: none repeat scroll 0 0 #FAECF0; border: 1px solid #CCCCCC;  color: #56004E; padding: 5px; font-size: 0.9em;}
+    .update{    float: right; margin-bottom: 3px;}
+    .leftb{
+    border-right: 1px solid #BBBBBB;
+    }
+    div .news_list_item {
+    border-top: medium dotted #56004E;
+    margin: 20px 10px 10px;
+    }
+    div .news_list_item h3, div .block h2, .slideToggle {
+    color: #D76E07;
+    font-size: 1em;
+    font-weight: bold;
+    cursor:pointer;
+    }
+    div .block h2 {
+    background: url("/images/blockTitleBkg.jpg") repeat scroll 0 0 transparent;
+    padding: 6px 10px;
+     }
+     .anything li {
+        list-style:none;
+        background-image:none;
+        padding-left:0px;
+     }
+     
+/* ----------------------------------------
+    4. Layout
+   ---------------------------------------- */
+#top{
+    background:repeat-x scroll center 71px #FFFFFF;
+    height: 155px;
+
+}
+
+#header{
+    background: none repeat scroll 0 0 white;
+    margin: 0 auto;
+    padding-bottom: 0;
+    width: 950px;
+}
+
+#header #contactInfo{
+    width:410px;
+    float:left;
+    margin-top: 40px;
+}
+
+#logo{
+    float: left;
+    height: 100px;
+    margin-top: 10px;
+    border: 2px solid #ccc;
+}
+#info{
+    float: right;
+    height: 30px;
+    margin-top: 55px;
+    text-align: right;
+    width: 420px;
+}
+#email{
+    line-height:2em;
+    font-size:0.56em;
+}
+
+#contactform{
+    border: 1px solid #CCCCCC;
+    padding: 10px;
+    width: 75%;
+}
+
+#wrapper{
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0 10px 20px;
+    position:relative;
+    width:951px;
+}
+
+
+#headerImageSmall{
+    background: url("/images/Smalltop.jpg") no-repeat scroll 0 0 transparent;
+    border-bottom: 9px solid black;
+    float: left;
+    height: 121px;
+    margin-top: 4px;
+    padding-bottom: 1px;
+    width: 950px;
+}
+
+#searchdrop{
+   background:url("/images/simple_small_down_arrow.gif") no-repeat scroll 0 -2px transparent;
+    padding-left:18px;
+}
+
+#content{
+    float:left;
+    margin-top:15px;
+}
+
+#leftCol{
+    float: left;
+    padding-top: 30px;
+    width: 664px;
+}
+#fullCol{
+    float: left;
+    padding-top: 15px;
+    width:950px;
+}
+
+#bottom{
+    border-left: 1px solid #BBBBBB;
+    border-right: 1px solid #BBBBBB;
+    float: left;
+    margin-top: 20px;
+}
+
+#rightCol{
+    float: right;
+    height: 100%;
+    padding-top: 15px;
+    width: 245px;
+}
+
+#rightTitle{
+    background: url("/images/rightTop.jpg") repeat scroll 0 0 transparent;
+    color: white;
+    float: left;
+    font-size: 1.4em;
+    font-weight: bold;
+    height: 32px;
+    padding-left: 10px;
+    padding-top: 18px;
+    width: 235px;
+}
+
+#footertext{
+    color: #56004E;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 950px;
+}
+
+#footer{
+    background:repeat scroll 0 0 transparent;
+    height: 80px;
+}
+
+#loading{background:url("http://production.kingscolleges.com/images/ajax-loader.gif") no-repeat scroll 0 0 transparent;
+height:17px;
+left:300px;
+margin:auto;
+position:relative;
+top:104px;
+opacity:0;
+}
+
+.saved{background:url("http://production.kingscolleges.com/images/message.alert.fade.png") repeat scroll 0 0 transparent;
+color:black;
+font-weight:bold;
+padding:5px;
+margin-bottom:5px;}
+
+/* ----------------------------------------
+    5. Navigation
+   ---------------------------------------- */
+  
+  #navigation{
+    float: left;
+    width: 100%;
+    margin-top:15px;
+    border-bottom:1px solid #000000;
+  }
+  #navigation span.left {
+    color: #FFFFFF;
+    float: left;
+    height: 27px;
+    left: 2px;
+    line-height: 35px;
+    position: relative;
+    top: -1px;
+    width: 8px;
+    }
+    /* #navigation span.left.current{ 
+
+    }
+    #navigation span.right.current{ 
+
+    } */
+    
+    
+    #navigation span.right { 
+    color: #FFFFFF;
+    float: left;
+    height: 27px;
+    left: 0;
+    line-height: 35px;
+    position: relative;
+    top: -1px;
+    width: 10px;
+    }
+    
+    #navigation ul {
+    border-left: 1px solid #A17DBD;
+    margin-left: 8px;
+    margin-top: 1px;
+    }
+    
+      #navigation ul li ul{
+    border-left: 1px solid #A17DBD;
+    margin-left: -3px;
+    margin-top: 1px;
+    }
+
+    #navigation ul li {
+    background:none repeat scroll 0 0 #CCCCCC;
+    border-left:1px solid white;
+    border-right:1px solid white;
+    float:left;
+    list-style:none outside none;
+    margin-left:1px;
+    margin-right:0;
+    padding:6px 15px 7px;
+    }
+    #navigation ul li.end {
+    height: 15px;
+    width: 219px;
+    }
+     #navigation ul li.current,#navigation ul li:hover  {
+    background:none repeat scroll 0 0 #FFFFFF;
+    border-color:#666666 #666666 white;
+    border-style:solid;
+    border-width:1px 1px 0;
+    color:#666666;
+    position:relative;
+    top:1px;
+    margin-bottom:-1px;
+    z-index:999;
+    }
+    
+    #navigation ul li a {
+    color: #FFFFFF;
+    font-weight:bold;
+    }
+    
+    #navigation ul li:hover>a{
+        color: #000;
+    }
+    
+    #navigation ul li a.current {
+     color:#666;
+    }
+   
+    #navigation ul li .menuitem {
+    margin-top: 32px;
+    padding-bottom: 7px;
+    padding-top: 7px;
+    text-align: center;
+    }
+   #homeline{
+    margin-top:40px;
+   }
+
+   
+   .comment{color:#666666;font-size:10px;margin-left:8px;margin-top:8px;}
+
+/* ----------------------------------------
+    6. Forms
+   ---------------------------------------- */
+#loginform{
+border:1px solid #E5E5E5;
+font-weight:normal;
+margin-left:8px;
+padding:16px 16px 40px;
+width:350px;
+margin:auto;
+}
+#loginform input{
+background:none repeat scroll 0 0 #FBFBFB;
+border:1px solid #E5E5E5;
+font-size:24px;
+margin-bottom:16px;
+margin-right:6px;
+margin-top:2px;
+padding:3px;
+width:97%;
+}
+form .forgetmenot {
+float:left;
+font-weight:normal;
+margin-bottom:0;
+}
+form .forgetmenot label {
+font-size:11px;
+line-height:19px;
+}
+
+input.button-primary, button.button-primary, a.button-primary {
+background:url("../images/button-grad.png") repeat-x scroll left top #21759B;
+border-color:#298CBA;
+color:#FFFFFF;
+font-weight:bold;
+text-shadow:0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+#login form p {
+margin-bottom:0;
+}
+
+form .submit, .alignright {
+float:right;
+}
+.button, .submit input, .button-secondary {
+background:none repeat scroll 0 0 #CCCCCC;
+border:medium none;
+color:white;
+float:left;
+margin:5px;
+padding:5px;
+cursor:pointer;
+text-align:left;
+}
+
+div.button{
+font-size:12px;
+padding-bottom:6px;
+padding-top:6px;
+}
+
+.editButton{
+    background:none repeat scroll 0 0 #CCCCCC;
+border:medium none;
+color:white;
+
+margin:5px;
+padding:5px;
+cursor:pointer;
+text-align:left;}
+
+td .button{
+    margin-top:-5px;
+}
+
+.button a {
+color:#fff;
+}
+
+.button:hover{
+    color:white;
+    background:#000;
+}
+
+span.filter{
+background:none repeat scroll 0 0 #CCCCCC;
+border:medium none;
+color:white;
+padding:5px;
+cursor:pointer;
+min-width:80px;
+}
+
+.submit {
+border-color:#DFDFDF;
+}
+.clear{
+    clear: both;
+}
+
+.save, .cancel{ width:40px;}
+
+form .formrow {
+    clear: both;
+    margin: 10px 0;
+}
+form .formrow label, form .span span {
+    float: left;
+    margin-top: 3px;
+}
+form .formrow input, form .formrow select, form .formrow textarea, a.submit, button {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    width: 24em;
+}
+form .formrow input.submit, a.submit, #jobs-search button {
+    color: #11ADB1;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    width: auto;
+}
+#project-request label span{
+    text-transform:none;
+}
+
+
+label, .title{
+display:block;
+font-weight:bold;
+text-transform:capitalize;
+margin-bottom:5px;
+margin-top:5px;}
+
+label.block{display:inline;font-weight:normal;}
+
+input[type=text],textarea{
+border:1px solid #666666;
+padding:5px;
+width:216px;}
+#frm_update{width:700px;}
+
+input#calPrint, input.date{width:145px;}
+
+textarea{width:430px; height:150px}
+p.editable-area textarea:focus, .edit input:focus{border:dotted 3px grey;}
+p.editable-area:hover, .edit:hover{background:yellow;}
+.editcheck{cursor:pointer;}
+.editcheck:hover{background:yellow;}
+#calPrint{margin-bottom:10px;}
+.date{margin-bottom:10px;}
+#frm_case,#frm_comments{height:30px;}
+
+fieldset{border:solid 1px #ccc; margin-bottom:10px;}
+
+/* ----------------------------------------
+    7. Tables
+   ---------------------------------------- */
+    table{    border: 1px solid #BBBBBB;
+    padding: 10px;
+    width: 950px;
+    }
+    td.input{
+    border-left:1px solid #CCCCCC;
+    }
+    
+    table td{
+    vertical-align:top;
+    padding: 10px;
+    }
+    table td.nopad{
+    padding: 1px;
+    padding-left: 10px;
+    }
+    
+    li.pager{   background: none repeat scroll 0 0 #eee;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 10px;
+    min-width: 16px;
+    padding: 6px 5px;
+    text-align: center;}
+    
+    .pagdiv{border-left: solid 1px #bbb; border-right: solid 1px #bbb;}
+    .pagdiv:last-of-type{border-bottom: solid 1px #bbb;}
+    .pagdiv ul{padding-bottom: 10px;   text-align: right;}
+    li.pager a.active{background: black; color:white;}
+ 
+    table.tablesorter tr td{ overflow: hidden;}
+    table.tablesorter tr td:nth-of-type(3){ word-break: break-all;word-wrap: normal;}
+    table.tablesorter tr td:nth-of-type(8){width: 175px;}
+    
+    tr.title {background:url("/images/gradientGreen.jpg") repeat scroll 0 0 #3D8057; color:white;}
+    tr.title td{padding:8px 1px;}
+    tr.unseen td{color:#0099ff}
+    td.cell_mini, td.cell_small {padding-left:8px;}
+    
+    table.tablesorter thead tr .header {
+    background-image:url("../images/bg.gif");
+    background-position:right center;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    padding-right:20px;
+    }
+    
+    table .header td{font-weight: bold;}
+    
+    table.tablesorter thead tr .headerSortUp {
+    background-image:url("../images/asc.gif");
+    }
+    
+    table.tablesorter thead tr .headerSortDown {
+    background-image:url("../images/desc.gif");
+    }
+
+    table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+    background-color:#E6EEEE;
+    border:1px solid #FFFFFF;
+    font-size:8pt;
+    padding:4px;
+    }
+    table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+    background-color:#8DBDD8;
+    }
+    th{
+     padding-left:10px;
+    }
+
+/* ----------------------------------------
+    8. Other
+   ---------------------------------------- */
+.highlight{background:yellow;}
+div.stockbox a img { 
+    height: 130px;
+}
+/* the overlayed element */
+.simple_overlay {
+	
+	/* must be initially hidden */
+	display:none;
+	
+	/* place overlay on top of other elements */
+	z-index:10000;
+	
+	/* styling */
+	background-color:#EEEEEE;
+	
+	width:675px;	
+	min-height:200px;
+	border:1px solid #666;
+
+
+}
+/* #thumbs{
+    
+} */
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+	background-image:url(../img/overlay/close.png);
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+/* styling for elements inside overlay */
+.details {
+    color: #000000;
+    font-size: 11px;
+    margin-right: 16px;
+    position: absolute;
+    right: 1px;
+    top: 35px;
+    width: 199px;
+}
+
+.details h3 {
+        color: #D76E07;
+        font-size: 20px;
+	}
+        
+.details .price {
+        color: #D76E07;
+        font-size: 15px;
+	}        
+ 
+#theday {
+	-moz-border-radius:5px;
+	background-color:#56004E;
+	color:#FFFFFF;
+	float:left;
+	font-size:90px;
+	height:80px;
+	line-height:50px;
+	padding:20px;
+	text-shadow:0 0 5px #DDDDDD;
+	width:117px;
+}
+ 
+#theday span {
+	display:block;
+	font-size:16px;
+	text-align:center;
+}
+
+#client{display:inline;}
+#navigation div{margin-bottom:5px;}
+#navigation table,  #navigation table td{border:none;padding:0px;width:auto;}
+
+
+.compButton.active,.list .compButton.active:after{background: #8dbdd8;}
+
+.list .compButton {
+	visibility: hidden;
+ display: inline-block;
+ float: left;
+	position: relative;
+  width:10px;
+  border: 5px solid #fff;
+ 
+}
+
+.list .compButton:after {
+	visibility: visible;
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: "-";
+ width:10px;
+ padding:10px;
+ background: #ccc;
+ margin-left:2px;
+ text-align: center;
+ 
+}
+
+.list .compButton.live:after {
+	content: "L";
+}
+
+.list .compButton.complete:after {
+	content: "C";
+}
+
+.list .compButton.ongoing:after {
+	content: "O";
+}
+
+
+td table#keywordstable {width: 100%;}
+/* td table#keywordstable tr{} */
+td table#keywordstable tr td{padding: 1px;}
+
+li .seen{text-decoration: underline;    font-weight: normal;}
+#inSystemAlerts{
+    background-color: maroon;
+    border: 5px solid #666;
+    border-radius: 10px;
+    bottom: 150px;
+    color: #a94442;
+    display: none;
+    opacity: 0.95;
+    padding: 15px;
+    position: fixed;
+    right: 20px;
+    font-weight: bold;
+    max-width: 350px;
+    z-index: 99999999;
+    opacity:0.9;
+    
+}
+
+#inSystemAlerts .close{display: none;}
+#inSystemAlerts a{color:white;}
+#inSystemAlerts li{list-style: none; margin-bottom: 5px;   margin-top: 5px; line-height: 1.2em;}
+
